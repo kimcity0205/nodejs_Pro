@@ -37,9 +37,9 @@ app.set('views', path.join(__dirname, 'views'));
 
 // ✅ 데이터베이스 연결
 const db = mysql.createConnection({
-  host: '10.10.100.231',
-  user: 'root',
-  password: 'test123',
+  host: '',
+  user: 'admin',
+  password: 'test1234',
   database: 'webapp_db'
 });
 

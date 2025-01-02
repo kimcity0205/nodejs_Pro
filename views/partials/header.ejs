@@ -3,7 +3,7 @@
     <nav>
       <% if (user) { %>
         <p class="welcome">
-          환영합니다, <strong><%= user.user_id %></strong>님!
+          환영합니다, <strong style="color:hotpink"><%= user.user_id %></strong>님!
           <a href="/logout" class="btn-logout">로그아웃</a>
         </p>
       <% } else { %>
