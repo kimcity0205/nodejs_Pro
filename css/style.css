@@ -1,0 +1,561 @@
+/* ✅ 공통 배경 이미지 스타일 */
+body {
+  background: url('/img/backimg.png') no-repeat center center/cover;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ✅ 페이지별 공통 레이아웃 스타일 */
+#login-page,
+#signup-page,
+#board-page,
+#complete-page,
+#loading-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* ✅ 공통 Container 스타일 */
+.container {
+  background: rgba(255, 255, 255, 0.3); /* 반투명 흰색 배경 */
+  border-radius: 12px; /* 모서리 둥글게 */
+  backdrop-filter: blur(10px); /* 블러 효과 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+  padding: 30px;
+  width: 400px; /* 적절한 너비 */
+  margin: auto; /* 상하 여백 추가 */
+  text-align: center;
+}
+
+/* ✅ 버튼 스타일 */
+.btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+/* ✅ 입력 필드 스타일 */
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+
+/* 🌟 제목 스타일 */
+.container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* 🌟 Input과 Button 통일 */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+/* 🌟 버튼 스타일 */
+.btn {
+  background-color: #4a90e2;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #357abd;
+}
+
+/* 🌟 오류 메시지 */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  display: none;
+}
+
+/* 🌟 Footer 스타일 */
+.footer {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* ✅ Complete 페이지 스타일 */
+#complete-page {
+  background: url('/img/backimg.png') no-repeat center center/cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+#complete-page .container {
+  background: rgba(255, 255, 255, 0.3); /* 반투명 흰색 배경 */
+  backdrop-filter: blur(10px); /* 블러 효과 */
+  border-radius: 12px; /* 모서리 둥글게 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+  padding: 30px;
+  text-align: center;
+  width: 400px;
+  margin: auto; /* 중앙 정렬 */
+}
+
+#complete-page h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+#complete-page .welcome {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+#complete-page .welcome a {
+  color: #357abd;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#complete-page .welcome a:hover {
+  text-decoration: underline;
+}
+
+#complete-page .pub-ip {
+  font-size: 14px;
+  color: #4a90e2;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+#complete-page .pub-ip a {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#complete-page .pub-ip a:hover {
+  text-decoration: underline;
+}
+
+#complete-page .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+#complete-page .buttons button {
+  background-color: #357abd;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+#complete-page .buttons button:hover {
+  background-color: #2c3e50;
+}
+
+/* ✅ DB 정보 섹션 스타일 */
+.db-info {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9); /* 부드러운 흰색 배경 */
+  border-radius: 12px; /* 둥근 모서리 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 */
+  text-align: center;
+}
+
+.db-info h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2c3e50; /* 제목 색상 */
+  margin-bottom: 20px;
+}
+
+/* ✅ DB 상세 정보 스타일 */
+.db-details {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* 레이블과 값 비율 */
+  gap: 10px 20px; /* 행과 열 간격 */
+  text-align: left;
+}
+
+.db-details .label {
+  font-weight: bold;
+  color: #555; /* 레이블 색상 */
+  text-align: left;
+  padding: 8px 12px;
+  background: #f5f5f5; /* 밝은 배경 */
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.db-details .value {
+  font-family: 'Courier New', monospace; /* 일관된 폰트 스타일 */
+  color: #333; /* 값 색상 */
+  background: #fff; /* 밝은 배경 */
+  border: 1px solid #ddd; /* 테두리 */
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ✅ Loading 페이지 스타일 */
+#loading-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background: linear-gradient(to right, #f0f4f8, #d9e6f2);
+}
+
+#loading-page .loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#loading-page .spinner {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+#loading-page .message {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#loading-page .welcome {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+#loading-page .welcome a {
+  color: #357abd;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#loading-page .welcome a:hover {
+  text-decoration: underline;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ✅ Board 페이지 스타일 */
+#board-page {
+  background: url('/img/backimg.png') no-repeat center center/cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+#board-page .container {
+  background: rgba(255, 255, 255, 0.3); /* 반투명 흰색 배경 */
+  backdrop-filter: blur(10px); /* 블러 효과 */
+  border-radius: 12px; /* 모서리 둥글게 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+  padding: 30px;
+  text-align: center;
+  width: 400px;
+  margin: auto; /* 중앙 정렬 */
+}
+
+#board-page h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+#board-page .welcome {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+#board-page .welcome a {
+  color: #357abd;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#board-page .welcome a:hover {
+  text-decoration: underline;
+}
+
+#board-page .form-group {
+  text-align: left;
+}
+
+#board-page .form-group label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+#board-page .form-group select,
+#board-page .form-group input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#board-page .form-group .error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  display: none;
+}
+
+#board-page .btn {
+  background-color: #357abd;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+#board-page .btn:hover {
+  background-color: #2c3e50;
+}
+
+/* ✅ RAM & CPU 옵션 그룹 */
+.resource-group {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.resource-group label {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* ✅ 옵션 컨테이너 (가로 정렬) */
+.resource-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px; /* 옵션 간격 */
+  margin-top: 10px;
+}
+
+/* ✅ 각 옵션 스타일 */
+.resource-options label {
+  flex: 1;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* ✅ 옵션 선택 시 강조 효과 */
+.resource-options input[type="radio"] {
+  display: none;
+}
+
+.resource-options input[type="radio"]:checked + .option {
+  border-color: #357abd;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+  background-color: #e6f7ff;
+}
+
+/* ✅ 옵션 텍스트 스타일 */
+.resource-options .option {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.resource-options .option strong {
+  font-size: 16px;
+  color: #357abd;
+}
+
+/* ✅ 옵션 호버 효과 */
+.resource-options label:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+
+/* 로그인 페이지 오류 메시지 */
+#error-message {
+  color: #d9534f;
+  background-color: #f2dede;
+  border: 1px solid #ebccd1;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* ✅ Header 스타일 */
+header {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 95%;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+header nav {
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* ✅ Footer 스타일 */
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  font-size: 14px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ✅ 로그아웃 버튼 스타일 */
+header .welcome .btn-logout {
+  background-color: #fff;
+  color: #fff;
+  font-size: 15px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
